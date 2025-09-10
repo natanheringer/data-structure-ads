@@ -3,7 +3,7 @@
 #include <time.h>
 
 // prototipos funcoes 
-
+#define TAMANHO 500000
 void insertionSort(int * V, int N);
 void showVector(int * V, int N);
 
@@ -15,16 +15,20 @@ void showVector(int * V, int N);
 
 
 int main() {
+
+        system("cls");
     //declarar vetor 
-    int Conjunto[] = {1, 9, 7, 8, 5, 2}; //24 bytes 
-    int Tamanho = sizeof(Conjunto) / sizeof(int);
+    int Conjunto[TAMANHO];
+    for(int i = 0; i < TAMANHO; i++){
+        Conjunto[i] = rand() % 1000;
+    }
     
     clock_t T0 = clock();
-    insertionSort(Conjunto, Tamanho);
+    insertionSort(Conjunto, TAMANHO);
     clock_t TF = clock();
 
     // pedir para ordenar vetor 
-    showVector(Conjunto, Tamanho);
+    showVector(Conjunto, TAMANHO);
 
     double TempoCPU = (double) (TF - T0) / CLOCKS_PER_SEC;
     printf("Tempo de CPU(ticks): %f\n", TempoCPU);
@@ -55,7 +59,6 @@ void insertionSort(int * V, int N){
 
         V[j + 1] = Chave;
    
-
     }
 
 }
