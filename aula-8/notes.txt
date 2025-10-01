@@ -1,0 +1,36 @@
+
+
+pesquisa binaria = melhoria de pesquisa sequencial 
+
+que era passar o posição do vetor para cada passo sequencial 
+
+olha elemento por elemento comparando com a posição requerida 
+
+for int i = 0; i < n; i++{
+    if (p(i) == Chave){
+        return i;
+    }
+}
+
+na pior das hipoteses ter que olhar o conjunto inteiro = complexidade = O(n) = ineficiente para pesquisa 
+
+aí que entra busca binaria = mais rapido e mais eficiente 
+
+dividir para conquistar - 
+
+pega elemento central do vetor e compara com elemento pesquisado
+se o elemento for igual ao prcurado a busca termina 
+se o elemento for maior, repete a busca na metade da direita 
+se o elemento for menor, repete a busca na metade da esquerda 
+
+identifica a chave -> compara com meio -> se = elemento do meio indica posição -> conclui
+                                        |-> senão pesquisa do meio para a direita -> conclui
+
+                                        ou seja  descarta a metade do conjunto ao inves de olhar elemento por elemento 
+                        mas... o vetor precisa estar ordenado para o algoritmo ser apliado ; 
+
+
+Pesquisa binaria 
+
+Eficiente - O(log n) =/ O(n) sequencial 
+Simples 
