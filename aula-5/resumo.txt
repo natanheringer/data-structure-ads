@@ -1,0 +1,23 @@
+Ordenação usando algoritmo de inserção.
+listas ordenadas e etc...
+lista trivial...
+compara o maior com o menor e trocar a posição 
+1 - 8 3 7 5 2 - inicialmente 8 é a lista trivial de um elemento ja estando ordenada  
+2 - 3 8 7 5 2 - 3 é comparado com o 8. sendo inserido a esquerda deste
+3 - 3 7 8 5 2 - 7 é inserido entre 3 e 8, considerando deslocamento do 8 
+....
+
+
+1 - [1] 9 7 8 5 2 - supoe-se que o 1 é a lista trivial [inicio correto[elemento chave]]
+2 - [1 9] 7 8 5 2 - ao comparar 1 com o 9, mantem-se ele no mesmo lugar (local correto)
+3 - [1 7 9] 8 5 2 - 
+4 - [1 7 8 9] 5 2 - 
+5 - [1 5 7 8 9] 2 -    resumo se o elemento é menor que o chave ele mantem-se no lugar se é maior desloca uma casa 
+6 - [1 2 5 7 8 9] - lista ordenada de maior para menor 
+
+
+
+AULA 5 = INSERÇÃO 
+AULA 6 = QUICKSORT
+AULA 7 = AV1(PROVA TEORICA)
+AULA 8 = 
