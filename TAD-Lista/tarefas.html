@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planner de Tarefas</title>
+  <style>
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+    th { background-color: #4CAF50; color: white; }
+    .status-afazer { color: red; font-weight: bold; }
+    .status-em-andamento { color: orange; font-weight: bold; }
+    .status-feito { color: green; font-weight: bold; }
+    .progress-bar {
+      background-color: #ddd;
+      border-radius: 5px;
+      overflow: hidden;
+      width: 100px;
+      height: 15px;
+    }
+    .progress-fill {
+      background-color: #4CAF50;
+      height: 100%;
+      width: 0%;
+    }
+  </style>
+</head>
+<body>
+<h1>Planner de Tarefas</h1>
+<table>
+  <tr>
+    <th>Título</th>
+    <th>Responsável</th>
+    <th>Status</th>
+    <th>Progresso</th>
+    <th>Avaliação</th>
+  </tr>
+  <tr>
+    <td>Entrega do relatorio de BD: </td>
+    <td>Ana Paula</td>
+    <td class="status-em-andamento">Em Andamento</td>
+    <td>
+      <div class="progress-bar">
+        <div class="progress-fill" style="width:75%"></div>
+      </div>
+      75%
+    </td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>Entrega do relatorio de BD: </td>
+    <td>Saulo de Tarso</td>
+    <td class="status-afazer">A Fazer</td>
+    <td>
+      <div class="progress-bar">
+        <div class="progress-fill" style="width:20%"></div>
+      </div>
+      20%
+    </td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>Revisão do código fonte: </td>
+    <td>Carlos Silva</td>
+    <td class="status-feito">Feito</td>
+    <td>
+      <div class="progress-bar">
+        <div class="progress-fill" style="width:100%"></div>
+      </div>
+      100%
+    </td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>Testes unitários: </td>
+    <td>Mariana Souza</td>
+    <td class="status-em-andamento">Em Andamento</td>
+    <td>
+      <div class="progress-bar">
+        <div class="progress-fill" style="width:50%"></div>
+      </div>
+      50%
+    </td>
+    <td>5</td>
+  </tr>
+  <tr>
+    <td>Documentação do projeto: </td>
+    <td>João Pereira</td>
+    <td class="status-afazer">A Fazer</td>
+    <td>
+      <div class="progress-bar">
+        <div class="progress-fill" style="width:10%"></div>
+      </div>
+      10%
+    </td>
+    <td>6</td>
+  </tr>
+  <tr>
+    <td>Análise de requisitos: </td>
+    <td>Fernanda Lima</td>
+    <td class="status-feito">Feito</td>
+    <td>
+      <div class="progress-bar">
+        <div class="progress-fill" style="width:100%"></div>
+      </div>
+      100%
+    </td>
+    <td>7</td>
+  </tr>
+  <tr>
+    <td>Implementação do módulo X: </td>
+    <td>Ricardo Gomes</td>
+    <td class="status-em-andamento">Em Andamento</td>
+    <td>
+      <div class="progress-bar">
+        <div class="progress-fill" style="width:30%"></div>
+      </div>
+      30%
+    </td>
+    <td>8</td>
+  </tr>
+  <tr>
+    <td>Correção de bugs: </td>
+    <td>Juliana Mendes</td>
+    <td class="status-afazer">A Fazer</td>
+    <td>
+      <div class="progress-bar">
+        <div class="progress-fill" style="width:5%"></div>
+      </div>
+      5%
+    </td>
+    <td>9</td>
+  </tr>
+  <tr>
+    <td>Reunião com cliente: </td>
+    <td>Paulo Andrade</td>
+    <td class="status-feito">Feito</td>
+    <td>
+      <div class="progress-bar">
+        <div class="progress-fill" style="width:100%"></div>
+      </div>
+      100%
+    </td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>Planejamento da sprint: </td>
+    <td>Laura Campos</td>
+    <td class="status-em-andamento">Em Andamento</td>
+    <td>
+      <div class="progress-bar">
+        <div class="progress-fill" style="width:60%"></div>
+      </div>
+      60%
+    </td>
+    <td>10</td>
+  </tr>
+</table>
+</body>
+</html>
