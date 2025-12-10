@@ -9,7 +9,6 @@ typedef struct {
     char telefone[10];
     char endereco[100];
 
-
 } Pessoa;
 
 
